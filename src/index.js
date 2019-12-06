@@ -1,5 +1,7 @@
-import promise from './promise.js'
+import promise from './promise'
 import async from './async'
+import wait from './wait'
 
 // promise()
-async()
+// async()
+wait()

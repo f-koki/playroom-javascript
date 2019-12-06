@@ -3,8 +3,7 @@ export default function () {
   async function hoge() {
     return 'hoge'
   }
-
-
+  
   hoge().then(value => {
     alert(value)
   })
