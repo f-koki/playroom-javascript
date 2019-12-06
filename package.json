@@ -1,0 +1,9 @@
+{
+  "name": "playroom-javascript",
+  "version": "1.0.0",
+  "description": "JavaScriptで遊ぶ",
+  "main": "index.js",
+  "repository": "git@github.com:f-koki/playroom-javascript.git",
+  "author": "f-koki <57610613+f-koki@users.noreply.github.com>",
+  "license": "MIT"
+}

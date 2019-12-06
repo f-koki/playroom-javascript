@@ -1,9 +1,11 @@
 const testExecutor = (resolve, reject) => {
-    setTimeout(()=>{
+    setTimeout(() => {
         resolve('hoge')
     }, 3000)
 }
 const testPromise = new Promise(testExecutor)
 testPromise.then(result => {
     console.log(result)
+}).finally(() => { 
+    console.log('done!') 
 })
