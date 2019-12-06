@@ -1,1 +1,3 @@
-alert('hoge');
+import promise from './promise.js'
+
+promise()
