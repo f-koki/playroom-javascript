@@ -13,5 +13,8 @@
   },
   "scripts": {
     "start": "webpack-dev-server"
+  },
+  "dependencies": {
+    "date-fns": "^2.8.1"
   }
 }
