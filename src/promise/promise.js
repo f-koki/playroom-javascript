@@ -7,7 +7,7 @@ export default function() {
     const testPromise = new Promise(testExecutor)
     testPromise.then(result => {
         console.log(result)
-    }).finally(() => { 
+    }).finally(() => {
         console.log('done!') 
     })
 }
