@@ -22,6 +22,16 @@ var localVariableDeclaration = () => {
 console.log(localvariable) // ERROR
 
 /**
+ * Local Scope 2
+ */
+var localVariableDeclaration2 = () => {
+  const hoge = 'fugafuga'
+  if(true) {
+    console.log(hoge)
+  }
+}
+
+/**
  * Block Scope
  */
 if (true) {
