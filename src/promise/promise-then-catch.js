@@ -14,3 +14,16 @@ promise.then(value => {
 }).catch(e => {
   console.log('second catch:' + e)
 })
+
+/**
+ * catchでreturnしたものを次のthenに渡すことができる
+ */
+var rejected = Promise
+  .reject('rejected...')
+  .catch(err => {
+    console.log('catched!')
+    return err
+  })
+rejected.then(value => {
+  console.log("result is ", value);
+})
