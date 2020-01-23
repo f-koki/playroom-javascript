@@ -1,7 +1,9 @@
 /**
  * 試すのにMoesif Orign & CORS Changerが必要（CORSを無効化するChrome Extension）
  */
-var zipcloudUrl = "http://zipcloud.ibsnet.co.jp/api/search?zipcode=1620825";
+// TODO: zipcodeをformから受け取れるようにする
+var zipcode = 1670051;
+var zipcloudUrl = "http://zipcloud.ibsnet.co.jp/api/search?zipcode=" + zipcode;
 var exportTarget = document.getElementById("fetch-test");
 console.log(exportTarget);
 fetch(zipcloudUrl)
