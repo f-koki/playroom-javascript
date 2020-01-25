@@ -27,3 +27,17 @@ var rejected = Promise
 rejected.then(value => {
   console.log("result is ", value);
 })
+
+/**
+ * catch で return syntax sugar
+ */
+var rejected2 = Promise
+  .reject(new Error('rejected...'))
+  .catch(err => {
+    return {
+      message: err.message
+    }
+  })
+rejected2.then(value => {
+  console.log("result is ", value)
+})
